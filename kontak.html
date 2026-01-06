@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak & Infaq</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MASJID AL-IKHLAS</div>
+    <div class="menu-btn">☰</div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="artikel.html" class="active">Artikel</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="qris.html">Donasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="section">
+
+<h2 class="section-title">Hubungi Kami</h2>
+
+<div class="card">
+    <h3>Kontak Pengurus Masjid</h3>
+
+    <div class="contact-item">
+        <h4>Ketua</h4>
+        <p>Nama: Ust. Saiful M.A</p>
+        <p>Telepon / WA:
+            <a href="https://wa.me/6285648689575">0856-4868-9575</a>
+        </p>
+    </div>
+
+    <div class="contact-item">
+        <h4>Sekretaris</h4>
+        <p>Nama: Hamid Arif</p>
+        <p>Telepon / WA:
+            <a href="https://wa.me/6281333518551">0813-3351-8551</a>
+        </p>
+    </div>
+
+    <div class="contact-item">
+        <h4>Bendahara</h4>
+        <p>Nama: Rizky Kalbuedy S.Si</p>
+        <p>Telepon / WA:
+            <a href="https://wa.me/628558544888">0855-8544-888</a>
+        </p>
+    </div>
+</div>
+
+<div class="card" style="margin-top: 20px;">
+    <h3>Lokasi Masjid</h3>
+    <p>
+        Masjid Al-Ikhlas<br>
+        Perum. Swan Menganti Park, Pelemwatu,<br>
+        Kec. Menganti, Kab. Gresik, Jawa Timur
+    </p>
+
+    <iframe
+        width="100%"
+        height="300"
+        class="map-frame"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Perum.+Swan+Menganti+Park+Pelemwatu,+Kec.+Menganti,+Kab.+Gresik&output=embed">
+    </iframe>
+</div>
+
+</section>
+
+<footer>© 2025 Masjid Al-Ikhlas</footer>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navUl = document.querySelector("nav ul");
+
+menuBtn.addEventListener("click", () => {
+    navUl.classList.toggle("active");
+});
+</script>
+
+<!-- SCRIPT MAIN.JS DITAMBAHKAN -->
+<script src="main.js" defer></script>
+
+</body>
+</html>

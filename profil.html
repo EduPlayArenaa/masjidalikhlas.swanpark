@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil Masjid</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MASJID AL-IKHLAS</div>
+    <div class="menu-btn">☰</div>
+
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="artikel.html" class="active">Artikel</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="qris.html">Donasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="section">
+<h2 class="section-title">Tentang Masjid</h2>
+
+<div class="card">
+    <p>
+        Masjid ini awalnya merupakan sebuah musholla kecil yang dibangun untuk memenuhi kebutuhan ibadah warga perumahan. Musholla tersebut menjadi tempat shalat, kegiatan mengaji anak-anak, serta pusat kegiatan keagamaan sederhana bagi masyarakat sekitar.
+    </p>
+
+    <p>
+        Seiring bertambahnya jumlah warga dan semakin berkembangnya aktivitas keislaman, kapasitas musholla tidak lagi mencukupi. Melihat kebutuhan tersebut, para tokoh masyarakat, pengurus musholla, serta warga perumahan sepakat untuk meningkatkan status musholla menjadi masjid.
+    </p>
+
+    <p>
+        Pada sekitar tahun 2020-an, proses peningkatan status resmi dilakukan. Musholla kemudian direnovasi dan diperluas agar dapat menampung jamaah lebih banyak serta menjalankan fungsi masjid secara penuh — mulai dari pelaksanaan shalat Jumat, kegiatan kajian rutin, hingga pelayanan sosial keagamaan.
+    </p>
+</div>
+
+</section>
+
+<footer>© 2025 Masjid Al-Ikhlas</footer>
+
+
+<!-- ========================== -->
+<!--  SEMUA JAVASCRIPT DIGABUNG  -->
+<!-- ========================== -->
+<script>
+
+// -----------------------------
+// Highlight menu otomatis
+// -----------------------------
+const navLinks = document.querySelectorAll("nav ul li a");
+navLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.style.color = "#ffd369";
+    link.style.fontWeight = "bold";
+  }
+});
+
+// -----------------------------
+// Popup Gallery (jaga kalau butuh)
+// -----------------------------
+function openImage(src) {
+  const pop = document.getElementById("popup");
+  document.getElementById("popup-img").src = src;
+  pop.style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("popup").style.display = "none";
+}
+
+// -----------------------------
+// Mobile Menu Button
+// -----------------------------
+const menuBtn = document.querySelector(".menu-btn");
+const navList = document.querySelector("nav ul");
+
+if (menuBtn) {
+    menuBtn.addEventListener("click", () => {
+        navList.classList.toggle("active");
+    });
+}
+
+</script>
+
+</body>
+</html>
